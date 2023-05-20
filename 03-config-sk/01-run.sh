@@ -2,9 +2,11 @@
 
 #config sk
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.signalk"
+install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.signalk/plugin-config-data"
 install -m 644 -o 1000 -g 1000 files/package.json "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.signalk/"
 install -m 644 -o 1000 -g 1000 files/settings.json "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.signalk/"
 install -m 775 -o 1000 -g 1000 files/signalk-server "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.signalk/"
+install -m 644 -o 1000 -g 1000 files/signalk-n2kais-to-nmea0183.json "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.signalk/plugin-config-data/"
 
 #autorun sk
 install -m 644 files/signalk.socket  "${ROOTFS_DIR}/etc/systemd/system/"
