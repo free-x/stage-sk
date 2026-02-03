@@ -3,4 +3,4 @@ URIs: https://deb.nodesource.com/node_22.x
 Architectures: ARCH
 Suites: nodistro
 Components: main
-Signed-By: /usr/share/keyrings/nodesource_2024.gpg
+Signed-By: /usr/share/keyrings/nodesource-repo.gpg
