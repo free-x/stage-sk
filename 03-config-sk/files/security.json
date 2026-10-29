@@ -1,0 +1,10 @@
+{
+  "allow_readonly": true,
+  "expiration": "NEVER",
+  "users": [],
+  "devices": [],
+  "immutableConfig": false,
+  "acls": [],
+  "allowDeviceAccessRequests": true,
+  "allowNewUserRegistration": true
+}
